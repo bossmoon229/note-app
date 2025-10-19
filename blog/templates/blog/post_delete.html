@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+
+<div class="content-section">
+    <h1>Delete post</h1>
+    <div class="mb-3">
+        <p>Are u sure u want to delete this? "{{post.title}}"</p>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Yes, Delete</button>
+            <a href="{% url 'home' %}">Cancel</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
