@@ -43,6 +43,12 @@ INSTALLED_APPS = [
     'crispy_bootstrap4',
 ]
 
+CRISPY_ALLOWED_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = "login"
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
